@@ -34,5 +34,5 @@ def predict() :
 
         return render_template('fat_predict.html', prediction_text="Predicted body fat percentage is {}".format(prediction))
         
-if __name__ == "_main_":
+if __name__ == "__main__":
     app.run()
