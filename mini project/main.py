@@ -32,7 +32,7 @@ def predict() :
 
         prediction = np.round(prediction, 2)
 
-        return render_template('fat_predict.html', prediction_text="Predicted body fat percentage is {}".format(prediction))
+        return render_template('fat_predict.html', prediction=prediction[0])
         
 if __name__ == "__main__":
     app.run()
